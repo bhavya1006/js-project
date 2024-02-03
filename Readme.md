@@ -44,6 +44,7 @@ buttons.forEach( function (button) {
 ```
 
 ---
+
 ## Project 2
 ### Preview
 ![Alt text](readme-imges/image-3.png)
