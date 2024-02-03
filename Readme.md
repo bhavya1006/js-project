@@ -4,7 +4,7 @@
 
 ### Preview
 
-![Alt text](image.png)
+![Alt text](readme-imges/image.png)
 
 
 # My-built-projects
@@ -12,7 +12,7 @@
 ## Project 1
 
 ### Preview
-![Alt text](image-1.png)![Alt text](image-2.png)
+![Alt text](readme-imges/image-1.png)![Alt text](readme-imges/image-2.png)
 
 ### Code
 ```javascript
@@ -46,7 +46,7 @@ buttons.forEach( function (button) {
 ---
 ## Project 2
 ### Preview
-![Alt text](image-3.png)
+![Alt text](readme-imges/image-3.png)
 
 ### Code
 ```javascript
