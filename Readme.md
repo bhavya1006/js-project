@@ -2,10 +2,19 @@
 
 [Repo Link Here!](https://github.com/bhavya1006/js-project/tree/main)
 
+### Preview
+
+![Alt text](image.png)
+
+
 # My-built-projects
 
 ## Project 1
 
+### Preview
+![Alt text](image-1.png)![Alt text](image-2.png)
+
+### Code
 ```javascript
 console.log('Hello World!');
 const buttons = document.querySelectorAll('.button');
@@ -36,7 +45,10 @@ buttons.forEach( function (button) {
 
 ---
 ## Project 2
+### Preview
+![Alt text](image-3.png)
 
+### Code
 ```javascript
 console.log("hello world");
 // Default action happening
