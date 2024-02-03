@@ -51,6 +51,7 @@ buttons.forEach( function (button) {
 ### Code
 ```javascript
 console.log("hello world");
+
 // Default action happening
 
 // const height = document.querySelector('#height')
@@ -110,4 +111,24 @@ form.addEventListener('submit', function(e){
     }
 
 })
+```
+
+## Project 3
+### Preview
+![Alt text](readme-imges/image-4.png)
+
+### Code
+```javascript
+console.log("Hello World!");
+const clock = document.getElementById('clock')
+// const clock = document.querySelector('#clock')
+
+
+setInterval(function(){
+    let date = new Date()
+    // console.log(date.toLocaleTimeString());
+    
+    clock.innerHTML = date.toLocaleTimeString();
+},1000)
+
 ```
