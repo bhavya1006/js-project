@@ -302,24 +302,39 @@ const randomColor = function() {
     return color;
 };
 
-let intervalId;
+// My code
 
-const startChangingColor = function(){
-    // console.log('no issue');
-    if (!intervalId){
-        intervalId = setInterval(changBgColor,1000);
-    }
-
-    function changBgColor(){
+document.querySelector('#start').addEventListener('click',function(){
+    let intervalId = setInterval(function(){
         document.body.style.backgroundColor = randomColor();
-    }
-};
-const stopChangingColor = function(){
-    clearInterval(intervalId);
-    intervalId = null;
-};
+    },1000)
 
-document.querySelector('#start').addEventListener('click',startChangingColor,false)
-document.querySelector('#stop').addEventListener('click',stopChangingColor)
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(intervalId);
+    })
+},false)
+
+
+// chai aur code's code
+
+// let intervalId;
+
+// const startChangingColor = function(){
+//     // console.log('no issue');
+//     if (!intervalId){
+//         intervalId = setInterval(changBgColor,1000);
+//     }
+
+//     function changBgColor(){
+//         document.body.style.backgroundColor = randomColor();
+//     }
+// };
+// const stopChangingColor = function(){
+//     clearInterval(intervalId);
+//     intervalId = null;
+// };
+
+// document.querySelector('#start').addEventListener('click',startChangingColor,false)
+// document.querySelector('#stop').addEventListener('click',stopChangingColor)
 
 ```
