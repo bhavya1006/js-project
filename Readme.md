@@ -252,3 +252,74 @@ function newGame() {
 }
 
 ```
+
+## Project 5
+### Preview
+![Alt text](readme-imges/image-7.png)
+
+### Code
+```javascript
+console.log("Hello World!");
+const insert = document.querySelector('#insert')
+
+window.addEventListener('keydown',(e)=>{
+    insert.innerHTML = `
+    <div class='color'>
+        <table>
+            <tr>
+                <th>Key</th>
+                <th>Keycode</th>
+                <th>Code</th>
+            </tr>
+            <tr>
+                <td>${e.key === " "?"Space":e.key}</td>
+                <td>${e.keyCode}</td>
+                <td>${e.code}</td>
+            </tr>
+        </table>
+    </div>
+    `
+})
+
+```
+
+## Project 6
+### Preview
+![Alt text](readme-imges/image-6.png)
+
+### Code
+```javascript
+console.log("Hello World!");
+// generate a random color
+
+const randomColor = function() {
+    const hex = '123456789ABCDEF';
+    let color = '#'
+    for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 15)];
+    }
+    console.log(color);
+    return color;
+};
+
+let intervalId;
+
+const startChangingColor = function(){
+    // console.log('no issue');
+    if (!intervalId){
+        intervalId = setInterval(changBgColor,1000);
+    }
+
+    function changBgColor(){
+        document.body.style.backgroundColor = randomColor();
+    }
+};
+const stopChangingColor = function(){
+    clearInterval(intervalId);
+    intervalId = null;
+};
+
+document.querySelector('#start').addEventListener('click',startChangingColor,false)
+document.querySelector('#stop').addEventListener('click',stopChangingColor)
+
+```
